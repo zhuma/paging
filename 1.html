@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,height=device-height,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <title>自定义分页</title>
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/1.css">
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+<div id="page" class="page"></div>
+<script src="js/main.js"></script>
+<script>
+    paging({
+        id:"page",
+        currPage : 1,
+        allPage : 20,
+        callBack : function(c,a){
+            console.log(c+"||"+a);
+        }
+    })
+</script>
+</body>
+</html>
